@@ -8,10 +8,9 @@ class UserController extends Controller
 {
     public function register()
     {
-
         $data['title'] = 'Register';
         return view('user/register', $data);
-    }    
+    }
 
     public function register_action(Request $request)
     {
@@ -21,14 +20,16 @@ class UserController extends Controller
             'password' => 'required',
             'password_confirm' => 'required|same:password',
         ]);
+
         $user = new User([
-            'name' => $reguest ->name,
-            'username' => $request -> username,
-            'password' => Hash::make($request->username),
+            'name' => $request->name,
+            'username' => $request->username,
+            'password' => Hash::make($request->password),
         ]);
         $user->save();
-        return redirect()->route('login')->with('success', 'Registration Success. Login!');
-    }    
+        
+        return redirect()->route('login')->with('success', 'Registration success. Please login!');
+    } 
 
     public function login()
     {

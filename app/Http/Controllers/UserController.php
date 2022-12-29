@@ -29,4 +29,10 @@ class UserController extends Controller
         $user->save();
         return redirect()->route('login')->with('success', 'Registration Success. Login!');
     }    
+
+    public function login()
+    {
+        $data['title'] = 'Login';
+        return view('user/login', $data);
+    }
 }

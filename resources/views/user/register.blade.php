@@ -31,11 +31,6 @@
             </div>
 
             <div class="mb-3">
-                <label>Password Confirmation<span class="text-danger">*</span></label>
-                <input class="form-control" name="password confirmation" />
-            </div>
-
-            <div class="mb-3">
                 <button class="btn btn-primary">Register</button>
                 <a class="btn btn-danger" href="{{ route('home') }}">Back</a>
             </div>

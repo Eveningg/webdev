@@ -2,6 +2,11 @@
 @section('content')
 <div class="row">
     <div class="col-md-6">
+        @if($errors->all() as $err)
+        @foreach($errors->all() as $err)
+        <p class="alert alert-danger">{{ $err}}</p>
+        @endforeach
+        @endif
         <form method="POST" action="{{ route('register.action') }}">
             @csrf
 

@@ -2,7 +2,7 @@
 @section('content')
 <div class="row">
     <div class="col-md-6">
-        <form action="{{ route('register.action') }}">
+        <form method="POST" action="{{ route('register.action') }}">
             @csrf
 
             <div class="mb-3">

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -24,10 +26,10 @@ class UserController extends Controller
         $user = new User([
             'name' => $request->name,
             'username' => $request->username,
-            'password' => Hash::make($request->password),
+            'password' => Hash::make($request->username),
         ]);
         $user->save();
-        
+
         return redirect()->route('login')->with('success', 'Registration success. Please login!');
     } 
 

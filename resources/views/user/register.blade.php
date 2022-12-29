@@ -12,22 +12,22 @@
 
             <div class="mb-3">
                 <label>Name <span class="text-danger">*</span></label>
-                <input class="form-control" name="name" value="{{ old('name') }}" />
+                <input class="form-control" type = "text" name="name" value="{{ old('name') }}" />
             </div>
 
             <div class="mb-3">
                 <label>Username <span class="text-danger">*</span></label>
-                <input class="form-control" name="username" value="{{ old('username') }}" />
+                <input class="form-control" type = "text" name="username" value="{{ old('username') }}" />
             </div>
 
             <div class="mb-3">
                 <label>Password <span class="text-danger">*</span></label>
-                <input class="form-control" name="password" />
+                <input class="form-control" type="password" name="password" />
             </div>
 
             <div class="mb-3">
                 <label>Password Confirmation<span class="text-danger">*</span></label>
-                <input class="form-control" name="password confirmation" />
+                <input class="form-control" type="password" name="password_confirmation" />
             </div>
 
             <div class="mb-3">

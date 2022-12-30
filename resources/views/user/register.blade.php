@@ -1,6 +1,6 @@
 @extends('app')
 @section('content')
-<div class="row">
+<div class="d-flex justify-content-center" class="row">
     <div class="col-md-6">
         @if($errors->any())
         @foreach($errors->all() as $err)
@@ -35,6 +35,7 @@
             </div>
 
         </form>
+        
     </div>
 </div>
 @endsection

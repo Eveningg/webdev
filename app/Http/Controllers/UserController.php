@@ -52,6 +52,6 @@ class UserController extends Controller
             return redirect()->intended('/');
         }
 
-        return back()->WithErrors('password', "Wrong Username or Password! Try Again!");
+        return back()->withErrors(['password' => 'Incorrect Username or Password!']);
     } 
 }

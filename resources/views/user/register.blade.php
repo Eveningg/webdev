@@ -13,7 +13,7 @@
                 <label>Name <span class="text-danger">*</span></label>
                 <input class="form-control" type="text" name="name" value="{{ old('name') }}" />
             </div>
-
+            
             <div class="mb-3">
                 <label>Username <span class="text-danger">*</span></label>
                 <input class="form-control" type="username" name="username" value="{{ old('username') }}" />
@@ -33,7 +33,7 @@
                 <button class="btn btn-primary">Register</button>
                 <a class="btn btn-danger" href="{{ route('home') }}">Back</a>
             </div>
-            
+
         </form>
     </div>
 </div>

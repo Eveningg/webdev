@@ -31,7 +31,7 @@ class UserController extends Controller
         ]);
         $user->save();
 
-        return redirect()->route('login')->with('success', 'Registration success. Please login!');
+        return redirect()->route('login')->with('success', 'Registration Succcess. Please login!');
     } 
 
     public function login()
@@ -47,7 +47,7 @@ class UserController extends Controller
             'password' => 'required',
         ]);
 
-        if(Auth::attempt(['username' => $request -> username, 'password' => $request->password])){
+        if(Auth::attempt(['username' => $request->username, 'password' => $request->password])){
             $request->session()->regenerate();
             return redirect()->intended('/');
         }

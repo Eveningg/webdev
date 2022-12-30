@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home', ['title' => 'home']);
 })->name('home');
 
 Route::get('register', [UserController::class, 'register'])->name('register');

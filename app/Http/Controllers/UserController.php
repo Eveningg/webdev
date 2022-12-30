@@ -11,7 +11,7 @@ class UserController extends Controller
 {
     public function register()
     {
-        $data['title'] = 'Register';
+        $data['title'] = '';
         return view('user/register', $data);
     }
 

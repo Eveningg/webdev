@@ -1,5 +1,7 @@
 @extends('app')
 @section('content')
+<h1 class="text-center"><strong>Registration Page:</strong></h1>
+
 <div class="d-flex justify-content-center" class="row">
     <div class="col-md-6">
         @if($errors->any())

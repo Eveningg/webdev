@@ -1,6 +1,8 @@
 @extends('app')
 @section('content')
-<div class="row">
+<h1 class="text-center"><strong>Login Page:</strong></h1>
+
+<div class="d-flex justify-content-center" class="row">
     <div class="col-md-6">
         @if(session('success'))
         <p class="alert alert-success">{{ session('success') }}</p>

@@ -57,7 +57,7 @@ class UserController extends Controller
 
     public function password()
     {
-        $data['title'] = 'Change Password';
+        $data['title'] = '';
         return view('user/password', $data);
     }
 

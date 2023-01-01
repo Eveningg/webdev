@@ -10,3 +10,4 @@
 <a class="btn btn-info" href="{{ route('register') }}">Register</a>
 @endguest
 @endsection
+
